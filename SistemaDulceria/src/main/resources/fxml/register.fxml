@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="932.0" maxWidth="430.0" minHeight="932.0" minWidth="430.0" prefHeight="932.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sistemadulceria.controller.RegisterController">
+
+    <children>
+        <AnchorPane layoutX="-9.0" prefHeight="90.0" prefWidth="385.0" style="-fx-background-color: #42A5F5;">
+            <children>
+                <Label layoutX="24.0" layoutY="29.0" text="Registro Usuario Sistema Dulceria">
+                    <font>
+                        <Font name="Arial Black" size="22.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <TextField fx:id="txtNombre" layoutX="78.0" layoutY="263.0" prefHeight="25.0" prefWidth="306.0" />
+        <Label layoutX="186.0" layoutY="230.0" text="Nombre(s)">
+            <font><Font name="System Bold" size="12.0" /></font>
+        </Label>
+        <Label layoutX="168.0" layoutY="313.0" text="Apellido Paterno">
+            <font><Font name="System Bold" size="12.0" /></font>
+        </Label>
+        <TextField fx:id="txtApellidoPat" layoutX="78.0" layoutY="350.0" prefHeight="25.0" prefWidth="306.0" />
+        <TextField fx:id="txtApellidoMaterno" layoutX="80.0" layoutY="417.0" prefHeight="25.0" prefWidth="306.0" />
+        <Label layoutX="167.0" layoutY="385.0" text="Apellido Materno">
+            <font><Font name="System Bold" size="12.0" /></font>
+        </Label>
+        <Label layoutX="201.0" layoutY="462.0" text="Email">
+            <font><Font name="System Bold" size="12.0" /></font>
+        </Label>
+        <TextField fx:id="txtEmail" layoutX="77.0" layoutY="504.0" prefHeight="25.0" prefWidth="306.0" />
+        <Label layoutX="184.0" layoutY="544.0" text="Contraseña">
+            <font><Font name="System Bold" size="12.0" /></font>
+        </Label>
+        <Button fx:id="btnRegistrarse" layoutX="229.0" layoutY="724.0" mnemonicParsing="false" onAction="#onRegister" prefHeight="31.0" prefWidth="175.0" style="-fx-background-color: #42A5F5;" text="Registrarse">
+            <font><Font name="System Bold" size="15.0" /></font>
+        </Button>
+        <Label layoutX="22.0" layoutY="667.0" text="¿Ya tienes cuenta?">
+            <font><Font name="System Bold" size="12.0" /></font>
+        </Label>
+        <Hyperlink fx:id="linkLogin" layoutX="126.0" layoutY="664.0" onAction="#abrirLogin" text="inicia sesión aquí">
+            <font><Font name="System Bold Italic" size="12.0" /></font>
+        </Hyperlink>
+        <Button fx:id="btnCerrar" layoutX="230.0" layoutY="768.0" mnemonicParsing="false" onAction="#cerrarVentana" prefHeight="31.0" prefWidth="175.0" style="-fx-background-color: #42A5F5;" text="Cerrar">
+            <font><Font name="System Bold" size="15.0" /></font>
+        </Button>
+        <PasswordField fx:id="txtContrasena" layoutX="74.0" layoutY="584.0" prefHeight="25.0" prefWidth="306.0" />
+    </children>
+</AnchorPane>

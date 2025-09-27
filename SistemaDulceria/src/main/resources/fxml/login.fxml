@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+    <AnchorPane maxHeight="932.0" maxWidth="430.0" minHeight="930.0" minWidth="432.0" prefHeight="932.0" prefWidth="432.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sistemadulceria.controller.LoginController">
+        <children>
+            <AnchorPane prefHeight="90.0" prefWidth="432.0" style="-fx-background-color: #42A5F5;">
+                <children>
+                    <Label layoutX="92.0" layoutY="29.0" text="Login Sistema Dulceria">
+                        <font>
+                            <Font name="Arial Black" size="22.0" />
+                        </font>
+                    </Label>
+                </children>
+            </AnchorPane>
+            <Label layoutX="180.0" layoutY="261.0" text="Correo Electronico">
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font></Label>
+            <TextField fx:id="txtCorreo" layoutX="97.0" layoutY="308.0" prefHeight="25.0" prefWidth="272.0" />
+            <Label layoutX="203.0" layoutY="368.0" text="Contraseña">
+             <font>
+                <Font name="System Bold" size="12.0" />
+             </font></Label>
+            <Button fx:id="btnEntrar" layoutX="233.0" layoutY="780.0" mnemonicParsing="false" onAction="#onLogin" prefHeight="31.0" prefWidth="175.0" style="-fx-background-color: #42A5F5;" text="Entrar">
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+            </Button>
+            <Label layoutX="44.0" layoutY="576.0" text="¿No tienes cuenta?">
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font>
+            </Label>
+            <Hyperlink fx:id="linkRegistro" layoutX="154.0" layoutY="573.0" onAction="#abrirRegistro" text="registrate aquí">
+                <font>
+                    <Font name="System Bold Italic" size="12.0" />
+                </font>
+            </Hyperlink>
+            <PasswordField fx:id="txtPassword" layoutX="96.0" layoutY="414.0" prefHeight="25.0" prefWidth="272.0" />
+          <Button fx:id="btnCerrar" layoutX="233.0" layoutY="848.0" mnemonicParsing="false" onAction="#cerrarVentana" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #42A5F5;" text="Cerrar">
+             <font>
+                <Font name="System Bold" size="15.0" />
+             </font>
+          </Button>
+        </children>
+    </AnchorPane>

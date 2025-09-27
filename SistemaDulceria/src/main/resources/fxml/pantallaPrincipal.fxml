@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="932.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sistemadulceria.controller.PantallaPrincipalController">
+    <children>
+
+        <AnchorPane prefHeight="96.0" prefWidth="430.0" style="-fx-background-color: #000D6B;">
+            <children>
+                <Label fx:id="lblBienvenida" layoutX="41.0" layoutY="33.0" text="Dulceria" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+            <Button fx:id="btnCerrar" layoutX="356.0" layoutY="36.0" mnemonicParsing="false" onAction="#cerrarVentana" style="-fx-background-color: #c31616;" text="Cerrar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblModo" layoutX="146.0" layoutY="40.0" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+        <Button fx:id="btnVista" layoutX="324.0" layoutY="110.0" mnemonicParsing="false" onAction="#toogleVista" style="-fx-background-color: #000D6B;" text="Vista de Arbol" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnEliminarProducto" layoutX="372.0" layoutY="185.0" onAction="#eliminarProducto" prefHeight="30.0" prefWidth="51.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" />
+        <Button fx:id="btnAgregarProducto" layoutX="112.0" layoutY="807.0" onAction="#abrirVentanaNuevoProducto" prefHeight="138.0" prefWidth="224.0" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+            <graphic>
+                <ImageView fx:id="imgPlus" fitHeight="84.0" fitWidth="242.0" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/plus.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <ScrollPane fx:id="scrollProductos" fitToWidth="true" layoutX="50.0" layoutY="146.0" prefHeight="697.0" prefWidth="332.0" style="-fx-background-color: transparent; -fx-background-insets: 0; -fx-padding: 0;">
+            <content>
+                <VBox fx:id="contenedorProductos" prefHeight="202.0" prefWidth="332.0" spacing="10.0" style="-fx-padding: 10; -fx-background-color: transparent;" />
+            </content>
+        </ScrollPane>
+          <ImageView fitHeight="25.0" fitWidth="33.0" layoutX="381.0" layoutY="191.0" preserveRatio="true">
+              <image>
+                  <Image url="@../images/Tacha.png" />
+              </image>
+          </ImageView>
+
+    </children>
+</AnchorPane>
