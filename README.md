@@ -32,6 +32,6 @@ Incluye además una interfaz gráfica sencilla para el manejo de productos y usu
 - `src/main/resources/imagenes_dulces` → Imágenes de productos
 
 
-##Nota importante
+## Nota importante
 
 -El archivo config.properties con las credenciales de la base de datos no está incluido en este repositorio. Cada usuario debe crear su propio archivo y configurarlo localmente.
